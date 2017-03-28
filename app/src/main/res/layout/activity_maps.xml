@@ -1,0 +1,39 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:map="https://schemas.android.com/apk/res-auto"
+        xmlns:tools="https://schemas.android.com/tools"
+        tools:context="com.example.nombu.googlemapsapp.MapsActivity"/>
+
+    <LinearLayout xmlns:android="https://schemas.android.com/apk/res/android"
+        xmlns:tools="https://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Restaurants" />
+
+        <Button
+            android:id="@+id/btnHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Hospitals" />
+
+        <Button
+            android:id="@+id/btnSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Schools" />
+    </LinearLayout>
+
+</FrameLayout>
